@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:slack="uri:oozie:slack-action:0.1" elementFormDefault="qualified"
+           targetNamespace="uri:oozie:slack-action:0.1">
+
+    <xs:element name="slack" type="slack:ACTION"/>
+
+    <xs:complexType name="ACTION">
+        <xs:sequence>
+            <xs:element name="text" type="xs:string" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="webhook-uri" type="xs:string" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
